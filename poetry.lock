@@ -1019,14 +1019,21 @@ files = [
 
 [[package]]
 name = "sphinx-notfound-page"
-version = "0.8"
+version = "1.0.2"
 description = "Sphinx extension to build a 404 page with absolute URLs"
 optional = false
-python-versions = "*"
+python-versions = ">=3.8"
 files = [
-    {file = "sphinx-notfound-page-0.8.tar.gz", hash = "sha256:39bf5b99e1fbf6164631ecac2b58038f08e0ab9278c563076aadd1cf04b6bb7a"},
-    {file = "sphinx_notfound_page-0.8-py3-none-any.whl", hash = "sha256:1901e01df9931922e87ef1f967042322b06a65790132cbd393861261e023b974"},
+    {file = "sphinx_notfound_page-1.0.2-py3-none-any.whl", hash = "sha256:dbfb4fb05d8ccdaf28c19c3452231eeab73917fd475dcafebbf3babb84343800"},
+    {file = "sphinx_notfound_page-1.0.2.tar.gz", hash = "sha256:7b2759ca79cbaa44422325f540b91542b1ce411cd31217c20cd6ba1e6cffb5ec"},
 ]
+
+[package.dependencies]
+sphinx = ">=5"
+
+[package.extras]
+doc = ["sphinx-autoapi", "sphinx-rtd-theme", "sphinx-tabs", "sphinxemoji"]
+test = ["tox"]
 
 [[package]]
 name = "sphinx-rtd-theme"
@@ -1521,4 +1528,4 @@ test = ["pytest"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "332f54447193814f64fa55f63299f5d4cd72d0838cbbde778c099a178a99cf26"
+content-hash = "86967fd3d953796629bd06eb1a82117dd97cdf21c30f57753901d709b0e5ef93"
