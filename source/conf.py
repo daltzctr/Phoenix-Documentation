@@ -73,7 +73,6 @@ rst_prolog = """
    .. raw:: html
    
       <p>
-      - CANCoder<br/>
       - Pigeon2<br/>
       - TalonFX<br/>
       </p>
