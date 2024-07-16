@@ -61,6 +61,7 @@ extensions = [
     'sphinx.ext.intersphinx',
 	'ablog',
     'notfound.extension',
+    'readthedocs_ext.readthedocs',
     'sphinxext.opengraph',
     'sphinx.ext.autosectionlabel'
 ]
@@ -95,6 +96,7 @@ master_doc = 'index'
 on_rtd = os.environ.get('READTHEDOCS') == 'True'
 
 if on_rtd:
+   html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
    notfound_no_urls_prefix = False
 else:
    notfound_no_urls_prefix = True
