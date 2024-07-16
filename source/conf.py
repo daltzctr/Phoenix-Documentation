@@ -61,7 +61,6 @@ extensions = [
     'sphinx.ext.intersphinx',
 	'ablog',
     'notfound.extension',
-    'readthedocs_ext.readthedocs',
     'sphinxext.opengraph',
     'sphinx.ext.autosectionlabel'
 ]
