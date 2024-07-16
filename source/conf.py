@@ -135,6 +135,11 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_logo = 'img/ctre.png'
 
+if on_rtd:
+    html_context = {
+        "READTHEDOCS": True
+    }
+
 # Theme tweaks on top of RTD
 def setup(app):
     app.add_css_file('css/theme_ctre.css')  
